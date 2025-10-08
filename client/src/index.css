@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miniver&display=swap");
+@layer base {
+  body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: black;
+    size: 16px;
+  }
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-1.5 bg-[#F5F5F5];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-rede31;
+  }
+  ::-webkit-scrollbar-track {
+    @apply shadow-[inset_0_0_6px_rgba(0,0,0,0.3)];
+  }
+}
+
+#listBanner:hover .slick-arrow {
+  @apply hidden md:block !important;
+}
+
+#listBanner .slick-arrow::before {
+  @apply text-5xl text-[#f0810d];
+}
+
+#listBanner .slick-prev {
+  @apply absolute z-10 top-1/2 -translate-y-1/2 left-4 transition-all hidden !important;
+}
+#listBanner .slick-next {
+  @apply absolute z-10 top-1/2 -translate-y-1/2 right-8 transition-all hidden !important;
+}
+#listBanner .slick-dots {
+  @apply absolute bottom-4 left-1/2 -translate-x-1/2 items-center justify-center flex !important;
+}
+
+#listBanner li button {
+  font-size: 0px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100rem;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+}
+#listBanner li button::before {
+  content: none;
+}
+
+#listBanner .slick-dots .slick-active button {
+  background-color: #f0810d;
+}
+
+#listCategories .slick-arrow::before {
+  @apply text-5xl text-[#f0810d];
+}
+
+#listCategories .slick-prev {
+  @apply hidden !important;
+}
+#listCategories .slick-next {
+  @apply absolute z-10 top-1/2 -translate-y-1/2 right-8 transition-all hidden md:flex !important;
+}
+
+#listCategories .slick-dots {
+  @apply absolute bottom-5 left-1/2 -translate-x-1/2 items-center justify-center flex !important;
+}
+
+#listCategories li button {
+  font-size: 0px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100rem;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+}
+#listCategories li button::before {
+  content: none;
+}
+
+#listCategories .slick-dots .slick-active button {
+  background-color: #f0810d;
+}
+
+#listTeamMember:hover .slick-arrow {
+  @apply hidden md:block !important;
+}
+
+#listTeamMember .slick-arrow::before {
+  @apply text-5xl text-[#f0810d];
+}
+
+#listTeamMember .slick-prev {
+  @apply absolute z-10 top-1/2 -translate-y-1/2 left-4 transition-all hidden !important;
+}
+#listTeamMember .slick-next {
+  @apply absolute z-10 top-1/2 -translate-y-1/2 right-11 transition-all hidden !important;
+}
+#listTeamMember .slick-dots {
+  @apply absolute -bottom-8 left-1/2 -translate-x-1/2 items-center justify-center flex !important;
+}
+
+#listTeamMember li button {
+  font-size: 0px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100rem;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+}
+#listTeamMember li button::before {
+  content: none;
+}
+
+#listTeamMember .slick-dots .slick-active button {
+  background-color: #f0810d;
+}
