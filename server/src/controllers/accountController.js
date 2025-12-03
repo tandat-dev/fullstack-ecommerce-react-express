@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const accountModel = require("../models/accountModel");
 
-const JWT_SECRET = "fastfoodqazplmwsxoknijbuhvtgcrfedy";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const accountController = {
   selectAccount: (req, res) => {
